@@ -1,0 +1,10 @@
+{
+  "name": "@vanillajs/object",
+  "version": "0.0.0",
+  "description": "Tiny, vanillajs object utilities",
+  "license": "MIT",
+  "main": "dist/object.umd.js",
+  "module": "dist/object.mjs",
+  "source": "src/object.js",
+  "unpkg": "dist/object.mjs"
+}

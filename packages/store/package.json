@@ -1,0 +1,13 @@
+{
+  "name": "@vanillajs/store",
+  "version": "0.1.7",
+  "description": "A tiny, vanilla JS State Container",
+  "license": "MIT",
+  "main": "dist/store.umd.js",
+  "module": "dist/store.mjs",
+  "dependencies": {
+    "@vanillajs/emitter": "0.0.0"
+  },
+  "source": "src/store.js",
+  "unpkg": "dist/store.mjs"
+}

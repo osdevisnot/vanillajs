@@ -1,0 +1,28 @@
+{
+  "name": "@vanillajs/vanillajs",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "osdevisnot <osdevisnot@gmail.com>",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "all": "oao all",
+    "boot": "oao bootstrap",
+    "postboot": "yarn run build",
+    "build": "oao all 'preroll'",
+    "presetup": "git clean -fdX",
+    "setup": "yarn && yarn run boot",
+    "postsetup": "cd packages/preroll && yarn unlink && yarn link"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "oao": "^1.6.0"
+  }
+}

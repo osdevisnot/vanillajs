@@ -1,0 +1,10 @@
+{
+  "name": "@vanillajs/router",
+  "version": "0.0.0",
+  "description": "A tiny, vanilla JS URL Router",
+  "license": "MIT",
+  "main": "dist/router.umd.js",
+  "module": "dist/router.mjs",
+  "source": "src/router.js",
+  "umd": "dist/router.mjs"
+}
