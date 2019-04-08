@@ -4,10 +4,10 @@ import store from '@vanillajs/store';
 store.use(
   { count: 0 },
   {
-    increment({ state }) {
+    increment(state) {
       return { count: state.count + 1 };
     },
-    decrement({ state }) {
+    decrement(state) {
       return { count: state.count - 1 };
     }
   }
@@ -26,6 +26,5 @@ const app = () => {
 
 const flush = () => render(app(), document.body);
 
-// Note: We are re-rendering on every state change
 flush();
-store.on(_ => flush());
+store.on(() => flush());
