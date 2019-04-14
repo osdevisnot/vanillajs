@@ -18,6 +18,6 @@
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-static-site": "^0.0.3",
     "rollup-plugin-terser": "^4.0.4",
-    "rollup-plugin-unpkg": "^0.0.2"
+    "rollup-plugin-unpkg": "^0.0.3"
   }
 }

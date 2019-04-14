@@ -55,11 +55,6 @@
   dependencies:
     "@types/node" "*"
 
-"@vanillajs/store@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@vanillajs/store/-/store-0.1.7.tgz#1a5355961c96973689a643f76fcb080cbb4cf82f"
-  integrity sha512-r/GgO0f2d5L2+ExTV25Y1QToL1HjFnQO3Ccx5+RWwtM0QMV8qoecYUwKg92Zg4C2H3wY6ZKhc1vg6goOcz+rRQ==
-
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -2145,10 +2140,10 @@ rollup-plugin-terser@^4.0.4:
     serialize-javascript "^1.6.1"
     terser "^3.14.1"
 
-rollup-plugin-unpkg@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-unpkg/-/rollup-plugin-unpkg-0.0.2.tgz#2ce85917b948ff52bc7f41f3b08591fecba6f050"
-  integrity sha512-ANjrEpGLc5b02Mr+jh+c61uwyQ95pFy9GS/4sU2CHd8GMzQeYwRzELrZu6wGLgJtidp7gRPt45MWyKbJxe/t5A==
+rollup-plugin-unpkg@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-unpkg/-/rollup-plugin-unpkg-0.0.3.tgz#d71937aef260de78fa29570268be8303b04398fc"
+  integrity sha512-iZk0rGnuilLVSrQQnet4BFHLa9NKWSmVFiiPFYpS2xLzL6l30VYmrZ0vLpH0U9dF+ZjXBta39uqT+6Mzujr3Bg==
   dependencies:
     estree-walker "^0.6.0"
     magic-string "^0.25.2"

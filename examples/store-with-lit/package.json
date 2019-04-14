@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@vanillajs/store": "^0.1.7"
+    "@vanillajs/store": "^1.0.0-alpha.3"
   },
   "peerDependencies": {
     "lit-html": "^1.0.0"
