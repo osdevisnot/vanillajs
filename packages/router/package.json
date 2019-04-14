@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/router",
-  "version": "0.0.0",
+  "version": "0.1.7",
   "description": "A tiny, vanilla JS URL Router",
   "license": "MIT",
   "main": "dist/router.umd.js",

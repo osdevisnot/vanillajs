@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/fetch",
-  "version": "0.0.0",
+  "version": "0.1.7",
   "description": "A tiny, vanillajs fetch wrapper",
   "license": "MIT",
   "main": "dist/fetch.umd.js",

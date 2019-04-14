@@ -92,7 +92,6 @@ if (pkg.source) {
           exclude: 'node_modules'
         }
       };
-      console.log(watchOptions);
       const watcher = rollup.watch(watchOptions);
       watcher.on('event', event => {
         if (event.code === 'ERROR' || event.code === 'FATAL') {

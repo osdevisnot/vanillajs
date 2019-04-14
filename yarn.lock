@@ -1284,11 +1284,6 @@ lazy-cache@^1.0.3:
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
   integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
 
-lit-html@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/lit-html/-/lit-html-1.0.0.tgz#3dc3781a8ca68a9b5c2ff2a61e263662b9b2267b"
-  integrity sha512-oeWlpLmBW3gFl7979Wol2LKITpmKTUFNn7PnFbh6YNynF61W74l6x5WhwItAwPRSATpexaX1egNnRzlN4GOtfQ==
-
 livereload@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.7.0.tgz#38238dd155ffb251191697f737b6b13f471da115"
@@ -2145,10 +2140,10 @@ rollup-plugin-terser@^4.0.4:
     serialize-javascript "^1.6.1"
     terser "^3.14.1"
 
-rollup-plugin-unpkg@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-unpkg/-/rollup-plugin-unpkg-0.0.1.tgz#5f66fee9484dec090db4b9f8058cc4224e0f8a49"
-  integrity sha512-tEadoD+au3Z2dJG6lGno2VZ8iRQHQLds4SI+TuPeXIoPPsN4eZlwRd8SGpEm7ch8tof+XlRt/IHmaQLcfPqHEA==
+rollup-plugin-unpkg@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-unpkg/-/rollup-plugin-unpkg-0.0.2.tgz#2ce85917b948ff52bc7f41f3b08591fecba6f050"
+  integrity sha512-ANjrEpGLc5b02Mr+jh+c61uwyQ95pFy9GS/4sU2CHd8GMzQeYwRzELrZu6wGLgJtidp7gRPt45MWyKbJxe/t5A==
   dependencies:
     estree-walker "^0.6.0"
     magic-string "^0.25.2"
@@ -2496,11 +2491,6 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
-
-superfine@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/superfine/-/superfine-6.0.1.tgz#a7b63a910bd5995f3e199d7484b6dccc3543289f"
-  integrity sha512-dd6XBZi5kpCn/QomQqT1M9NNWgeTsWs0TB0J+Z0/ccmrtfp8fpsldLc7xSKEf2DSEeq+u4kTCf8AdurVJ7Blfg==
 
 supports-color@^2.0.0:
   version "2.0.0"

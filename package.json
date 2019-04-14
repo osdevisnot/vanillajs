@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/vanillajs",
-  "version": "0.0.0",
+  "version": "0.1.7",
   "private": true,
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
@@ -14,6 +14,7 @@
     "boot": "oao bootstrap",
     "postboot": "yarn run build",
     "build": "oao all 'preroll build'",
+    "pub": "oao publish",
     "presetup": "git clean -fdX",
     "setup": "yarn && cd tooling/preroll && yarn unlink && yarn link",
     "postsetup": "yarn run boot"

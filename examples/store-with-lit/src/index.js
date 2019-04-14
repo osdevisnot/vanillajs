@@ -1,5 +1,5 @@
 import { render, html } from 'lit-html';
-import store from '@vanillajs/store';
+import { store } from '@vanillajs/store';
 import './store';
 
 const app = () => {

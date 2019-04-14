@@ -4,7 +4,9 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@vanillajs/store": "^0.1.7",
+    "@vanillajs/store": "^0.1.7"
+  },
+  "peerDependencies": {
     "superfine": "^6.0.1"
   },
   "source": "src/index.js"

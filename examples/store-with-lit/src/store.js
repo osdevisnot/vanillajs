@@ -1,4 +1,4 @@
-import store from '@vanillajs/store';
+import { store } from '@vanillajs/store';
 
 store.use(
   { count: 0 },
