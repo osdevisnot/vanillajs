@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "source": "src/index.js",
   "dependencies": {
     "@vanillajs/store": "^0.1.7",
     "lit-html": "^1.0.0"
-  }
+  },
+  "source": "src/index.js"
 }

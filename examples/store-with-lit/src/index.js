@@ -1,17 +1,6 @@
 import { render, html } from 'lit-html';
 import store from '@vanillajs/store';
-
-store.use(
-  { count: 0 },
-  {
-    increment(state) {
-      return { count: state.count + 1 };
-    },
-    decrement(state) {
-      return { count: state.count - 1 };
-    }
-  }
-);
+import './store';
 
 const app = () => {
   const { state, dispatch } = store;

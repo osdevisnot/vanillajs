@@ -6,16 +6,17 @@
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "tooling/*"
   ],
   "scripts": {
     "all": "oao all",
     "boot": "oao bootstrap",
     "postboot": "yarn run build",
-    "build": "oao all 'preroll'",
+    "build": "oao all 'preroll build'",
     "presetup": "git clean -fdX",
-    "setup": "yarn && yarn run boot",
-    "postsetup": "cd packages/preroll && yarn unlink && yarn link"
+    "setup": "yarn && cd tooling/preroll && yarn unlink && yarn link",
+    "postsetup": "yarn run boot"
   },
   "prettier": {
     "printWidth": 80,
