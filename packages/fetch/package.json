@@ -5,6 +5,8 @@
   "license": "MIT",
   "main": "dist/fetch.umd.js",
   "module": "dist/fetch.mjs",
-  "source": "src/fetch.js",
-  "unpkg": "dist/fetch.mjs"
+  "publishConfig": {
+    "access": "public"
+  },
+  "source": "src/fetch.js"
 }

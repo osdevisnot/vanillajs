@@ -6,8 +6,10 @@
   "main": "dist/store.umd.js",
   "module": "dist/store.mjs",
   "dependencies": {
-    "@vanillajs/emitter": "0.1.7"
+    "@vanillajs/emitter": "1.0.0-alpha.0"
   },
-  "source": "src/store.js",
-  "unpkg": "dist/store.mjs"
+  "publishConfig": {
+    "access": "public"
+  },
+  "source": "src/store.js"
 }

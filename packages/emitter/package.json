@@ -5,6 +5,8 @@
   "license": "MIT",
   "main": "dist/emitter.umd.js",
   "module": "dist/emitter.mjs",
-  "source": "src/emitter.js",
-  "unpkg": "dist/emitter.mjs"
+  "publishConfig": {
+    "access": "public"
+  },
+  "source": "src/emitter.js"
 }
