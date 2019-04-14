@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/vanillajs",
-  "version": "0.1.7",
+  "version": "1.0.0-alpha.0",
   "private": true,
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
