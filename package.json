@@ -15,7 +15,7 @@
     "postboot": "yarn run build",
     "build": "oao all 'preroll build'",
     "prepub": "yarn run setup",
-    "pub": "oao publish",
+    "pub": "npx oao publish",
     "presetup": "git clean -fdX",
     "setup": "yarn && cd tooling/preroll && yarn unlink && yarn link",
     "postsetup": "yarn run boot"
