@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/store",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "A tiny, vanilla JS State Container.",
   "license": "MIT",
   "main": "dist/store.umd.js",
