@@ -6,7 +6,7 @@
   "main": "dist/store.umd.js",
   "module": "dist/store.mjs",
   "dependencies": {
-    "@vanillajs/emitter": "1.0.0-alpha.0"
+    "@vanillajs/emitter": "1.0.0-alpha.1"
   },
   "publishConfig": {
     "access": "public"
