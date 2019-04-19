@@ -8,15 +8,11 @@
     "boot": "lerna bootstrap",
     "postboot": "lerna run build",
     "prepub": "yarn run setup",
+    "pub": "lerna publish",
     "presetup": "git clean -fdX",
     "setup": "yarn",
     "postsetup": "yarn run boot",
     "sort": "lerna exec -- sort-package-json"
-  },
-  "prettier": {
-    "printWidth": 120,
-    "semi": true,
-    "singleQuote": true
   },
   "devDependencies": {
     "lerna": "^3.13.3"

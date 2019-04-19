@@ -3,8 +3,8 @@
   "version": "1.0.0-alpha.5",
   "description": "A tiny, vanillajs event emitter",
   "license": "MIT",
+  "main": "dist/emitter.js",
   "module": "dist/emitter.mjs",
-  "source": "src/emitter.js",
   "scripts": {
     "build": "microbundle build"
   },
@@ -16,5 +16,7 @@
   },
   "mangle": {
     "regex": "^_"
-  }
+  },
+  "source": "src/emitter.js",
+  "unpkg": "dist/emitter.mjs"
 }

@@ -3,8 +3,8 @@
   "version": "1.0.0-alpha.5",
   "description": "A tiny, vanilla JS State Container",
   "license": "MIT",
+  "main": "dist/store.js",
   "module": "dist/store.mjs",
-  "source": "src/store.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -19,5 +19,7 @@
   },
   "mangle": {
     "regex": "^_"
-  }
+  },
+  "source": "src/store.js",
+  "unpkg": "dist/store.mjs"
 }

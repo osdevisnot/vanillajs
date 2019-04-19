@@ -3,8 +3,8 @@
   "version": "1.0.0-alpha.5",
   "description": "A tiny, vanillajs fetch wrapper",
   "license": "MIT",
+  "main": "dist/fetch.js",
   "module": "dist/fetch.mjs",
-  "source": "src/fetch.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -16,5 +16,7 @@
   },
   "mangle": {
     "regex": "^_"
-  }
+  },
+  "source": "src/fetch.js",
+  "unpkg": "dist/fetch.mjs"
 }
