@@ -1,15 +1,23 @@
 {
   "name": "@vanillajs/store",
   "version": "1.0.0-alpha.5",
-  "description": "A tiny, vanilla JS State Container.",
+  "description": "A tiny, vanilla JS State Container",
   "license": "MIT",
-  "main": "dist/store.umd.js",
   "module": "dist/store.mjs",
+  "source": "src/store.js",
+  "scripts": {
+    "build": "microbundle"
+  },
   "dependencies": {
-    "@vanillajs/emitter": "1.0.0-alpha.3"
+    "@vanillajs/emitter": "1.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "source": "src/store.js"
+  "mangle": {
+    "regex": "^_"
+  }
 }

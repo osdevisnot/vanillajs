@@ -1,12 +1,20 @@
 {
   "name": "@vanillajs/router",
-  "version": "1.0.0-alpha.3",
-  "description": "A tiny, vanilla JS URL Router.",
+  "version": "1.0.0-alpha.5",
+  "description": "A tiny, vanilla JS URL Router",
   "license": "MIT",
-  "main": "dist/router.umd.js",
   "module": "dist/router.mjs",
+  "source": "src/router.js",
+  "scripts": {
+    "build": "microbundle"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "source": "src/router.js"
+  "mangle": {
+    "regex": "^_"
+  }
 }

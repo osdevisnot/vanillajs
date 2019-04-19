@@ -1,10 +1,10 @@
 {
   "name": "store-with-lit",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@vanillajs/store": "^1.0.0-alpha.3"
+    "@vanillajs/store": "^1.0.0-alpha.5"
   },
   "peerDependencies": {
     "lit-html": "^1.0.0"

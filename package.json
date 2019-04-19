@@ -1,31 +1,24 @@
 {
   "name": "@vanillajs/vanillajs",
-  "version": "1.0.0-alpha.5",
+  "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
-  "workspaces": [
-    "packages/*",
-    "examples/*",
-    "tooling/*"
-  ],
   "scripts": {
-    "all": "oao all",
-    "boot": "oao bootstrap",
-    "postboot": "yarn run build",
-    "build": "oao all 'preroll build'",
+    "boot": "lerna bootstrap",
+    "postboot": "lerna run build",
     "prepub": "yarn run setup",
-    "pub": "npx oao publish",
     "presetup": "git clean -fdX",
-    "setup": "yarn && cd tooling/preroll && yarn unlink && yarn link",
-    "postsetup": "yarn run boot"
+    "setup": "yarn",
+    "postsetup": "yarn run boot",
+    "sort": "lerna exec -- sort-package-json"
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": 120,
     "semi": true,
     "singleQuote": true
   },
   "devDependencies": {
-    "oao": "^1.6.0"
+    "lerna": "^3.13.3"
   }
 }

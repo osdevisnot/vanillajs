@@ -1,12 +1,20 @@
 {
   "name": "@vanillajs/object",
-  "version": "1.0.0-alpha.3",
-  "description": "Tiny, vanillajs object utilities.",
+  "version": "1.0.0-alpha.5",
+  "description": "Tiny, vanillajs object utilities",
   "license": "MIT",
-  "main": "dist/object.umd.js",
   "module": "dist/object.mjs",
+  "source": "src/object.js",
+  "scripts": {
+    "build": "microbundle"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "source": "src/object.js"
+  "mangle": {
+    "regex": "^_"
+  }
 }
