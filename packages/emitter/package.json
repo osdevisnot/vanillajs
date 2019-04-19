@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/emitter",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "description": "A tiny, vanillajs event emitter",
   "license": "MIT",
   "main": "dist/emitter.js",
