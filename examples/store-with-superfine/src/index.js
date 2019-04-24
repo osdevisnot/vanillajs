@@ -1,5 +1,5 @@
-import { patch, h } from 'https://unpkg.com/superfine';
-import store from '@vanillajs/store';
+import { patch, h } from 'https://unpkg.com/superfine?module';
+import store from '/node_modules/@vanillajs/store/dist/store.mjs';
 
 store.use(
   { count: 0 },

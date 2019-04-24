@@ -8,7 +8,7 @@
   "module": "dist/store.mjs",
   "source": "src/store.js",
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle --external=none  --name vanillajs.store"
   },
   "dependencies": {
     "@vanillajs/emitter": "^1.0.0-alpha.6"

@@ -1,9 +1,8 @@
 {
   "name": "store-with-superfine",
-  "version": "1.0.0-alpha.5",
+  "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "source": "src/index.js",
   "scripts": {
     "start": "servor"
   },

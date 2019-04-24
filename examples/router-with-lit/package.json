@@ -1,5 +1,5 @@
 {
-  "name": "store-with-lit",
+  "name": "router-with-lit",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -7,6 +7,6 @@
     "start": "servor"
   },
   "dependencies": {
-    "@vanillajs/store": "1.0.0-alpha.6"
+    "@vanillajs/router": "1.0.0-alpha.6"
   }
 }

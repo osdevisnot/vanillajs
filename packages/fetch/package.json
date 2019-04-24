@@ -8,7 +8,7 @@
   "module": "dist/fetch.mjs",
   "source": "src/fetch.js",
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle  --name vanillajs.fetch"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"

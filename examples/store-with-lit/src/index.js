@@ -1,5 +1,5 @@
 import { render, html } from 'https://unpkg.com/lit-html';
-import store from '../../node_modules/@vanillajs/store.js';
+import store from '/node_modules/@vanillajs/store/dist/store.mjs';
 
 
 store.use(

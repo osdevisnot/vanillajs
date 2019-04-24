@@ -8,7 +8,7 @@
   "module": "dist/object.mjs",
   "source": "src/object.js",
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle  --name vanillajs.object"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"

@@ -8,7 +8,7 @@
   "module": "dist/emitter.mjs",
   "source": "src/emitter.js",
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle --name vanillajs.emitter"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"
