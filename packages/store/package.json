@@ -4,7 +4,9 @@
   "description": "A tiny, vanilla JS State Container",
   "license": "MIT",
   "main": "dist/store.js",
+  "unpkg": "dist/store.mjs",
   "module": "dist/store.mjs",
+  "source": "src/store.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -19,7 +21,5 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "source": "src/store.js",
-  "unpkg": "dist/store.mjs"
+  }
 }

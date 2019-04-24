@@ -4,7 +4,9 @@
   "description": "Tiny, vanillajs object utilities",
   "license": "MIT",
   "main": "dist/object.js",
+  "unpkg": "dist/object.mjs",
   "module": "dist/object.mjs",
+  "source": "src/object.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -16,7 +18,5 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "source": "src/object.js",
-  "unpkg": "dist/object.mjs"
+  }
 }

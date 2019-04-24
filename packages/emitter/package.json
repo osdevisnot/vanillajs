@@ -4,9 +4,11 @@
   "description": "A tiny, vanillajs event emitter",
   "license": "MIT",
   "main": "dist/emitter.js",
+  "unpkg": "dist/emitter.mjs",
   "module": "dist/emitter.mjs",
+  "source": "src/emitter.js",
   "scripts": {
-    "build": "microbundle build"
+    "build": "microbundle"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"
@@ -16,7 +18,5 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "source": "src/emitter.js",
-  "unpkg": "dist/emitter.mjs"
+  }
 }

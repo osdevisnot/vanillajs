@@ -4,7 +4,9 @@
   "description": "A tiny, vanillajs fetch wrapper",
   "license": "MIT",
   "main": "dist/fetch.js",
+  "unpkg": "dist/fetch.mjs",
   "module": "dist/fetch.mjs",
+  "source": "src/fetch.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -16,7 +18,5 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "source": "src/fetch.js",
-  "unpkg": "dist/fetch.mjs"
+  }
 }

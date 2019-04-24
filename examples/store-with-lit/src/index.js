@@ -1,6 +1,18 @@
-import { render, html } from 'lit-html';
-import store from '@vanillajs/store';
-import './store';
+import { render, html } from 'https://unpkg.com/lit-html';
+import store from '../../node_modules/@vanillajs/store.js';
+
+
+store.use(
+  { count: 0 },
+  {
+    increment(state) {
+      return { count: state.count + 1 };
+    },
+    decrement(state) {
+      return { count: state.count - 1 };
+    }
+  }
+);
 
 const app = () => {
   const { state, dispatch } = store;

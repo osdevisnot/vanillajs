@@ -1,4 +1,4 @@
-import { patch, h } from 'superfine';
+import { patch, h } from 'https://unpkg.com/superfine';
 import store from '@vanillajs/store';
 
 store.use(

@@ -4,7 +4,9 @@
   "description": "A tiny, vanilla JS URL Router",
   "license": "MIT",
   "main": "dist/router.js",
+  "unpkg": "dist/router.mjs",
   "module": "dist/router.mjs",
+  "source": "src/router.js",
   "scripts": {
     "build": "microbundle"
   },
@@ -16,7 +18,5 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "source": "src/router.js",
-  "unpkg": "dist/router.mjs"
+  }
 }

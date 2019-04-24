@@ -3,11 +3,11 @@
   "version": "1.0.0-alpha.5",
   "private": true,
   "license": "MIT",
+  "source": "src/index.js",
+  "scripts": {
+    "start": "servor"
+  },
   "dependencies": {
-    "@vanillajs/store": "^1.0.0-alpha.5"
-  },
-  "peerDependencies": {
-    "lit-html": "^1.0.0"
-  },
-  "source": "src/index.js"
+    "@vanillajs/store": "1.0.0-alpha.6"
+  }
 }
