@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/object",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "description": "Tiny, vanillajs object utilities",
   "license": "MIT",
   "main": "dist/object.js",

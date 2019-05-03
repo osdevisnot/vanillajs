@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/store",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "description": "A tiny, vanilla JS State Container",
   "license": "MIT",
   "main": "dist/store.js",
@@ -11,7 +11,7 @@
     "build": "microbundle --external=none  --name vanillajs.store"
   },
   "dependencies": {
-    "@vanillajs/emitter": "^1.0.0-alpha.6"
+    "@vanillajs/emitter": "^1.0.0-alpha.7"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"

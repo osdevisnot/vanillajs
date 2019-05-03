@@ -1,12 +1,12 @@
 {
   "name": "router-with-lit",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.7",
   "private": true,
   "license": "MIT",
   "scripts": {
     "start": "servor"
   },
   "dependencies": {
-    "@vanillajs/router": "1.0.0-alpha.6"
+    "@vanillajs/router": "^1.0.0-alpha.7"
   }
 }
