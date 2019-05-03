@@ -13,14 +13,7 @@ const set = (obj, keys, val) => {
     x;
   for (; i < l; ++i) {
     x = t[keys[i]];
-    t = t[keys[i]] =
-      i === l - 1
-        ? val
-        : x != null
-        ? x
-        : !!~keys[i + 1].indexOf('.') || !(+keys[i + 1] > -1)
-        ? {}
-        : [];
+    t = t[keys[i]] = i === l - 1 ? val : x != null ? x : !!~keys[i + 1].indexOf('.') || !(+keys[i + 1] > -1) ? {} : [];
   }
 };
 

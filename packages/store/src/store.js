@@ -1,13 +1,13 @@
 import emitter from '@vanillajs/emitter';
 
-const EVENT = '@@STORE@@';
+const EVENT = '@_@';
 
 let _state = {},
   _actions = {};
 
 const setState = (update, action) => {
   _state = { ..._state, ...update };
-  emitter.emit(EVENT, _state);
+  emitter.emit(EVENT, _state, action);
 };
 
 const store = {
@@ -16,13 +16,14 @@ const store = {
   },
   on(handler) {
     emitter.on(EVENT, handler);
+    return store.off.bind(store, handler);
   },
   get state() {
     return _state;
   },
-  dispatch(action, payload) {
+  dispatch(action, ...payload) {
     if (_actions[action]) {
-      const update = _actions[action](_state, payload);
+      const update = _actions[action](_state, ...payload);
       if (update) {
         if (update.then) {
           return update.then(res => setState(res, action));

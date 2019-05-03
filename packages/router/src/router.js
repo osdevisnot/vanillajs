@@ -10,13 +10,8 @@ const parametersPattern = /(:[^\/]+)/g;
  * @param pathname target location to match towards
  */
 function routeMatcher(route, pathname) {
-  const match = new RegExp(
-    route.path.replace(parametersPattern, '([^/]+)') +
-      (route.exact ? '$' : '(/|$)')
-  );
-  const params = (route.path.match(parametersPattern) || []).map(x =>
-    x.substring(1)
-  );
+  const match = new RegExp(route.path.replace(parametersPattern, '([^/]+)') + (route.exact ? '$' : '(/|$)'));
+  const params = (route.path.match(parametersPattern) || []).map(x => x.substring(1));
   const matches = pathname.match(match);
   if (!matches) {
     return false;
