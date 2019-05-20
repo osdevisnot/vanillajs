@@ -1,6 +1,6 @@
 {
   "name": "@vanillajs/hash",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "description": "vanillajs string hash",
   "license": "MIT",
   "main": "dist/hash.js",
