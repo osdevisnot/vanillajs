@@ -12,9 +12,11 @@
     "presetup": "git clean -fdX",
     "setup": "yarn",
     "postsetup": "yarn run boot",
-    "sort": "lerna exec -- sort-package-json"
+    "sort": "lerna exec -- sort-package-json",
+    "update": "ncu",
+    "postupdate": "lerna exec -- ncu"
   },
   "devDependencies": {
-    "lerna": "^3.13.3"
+    "lerna": "^3.15.0"
   }
 }
