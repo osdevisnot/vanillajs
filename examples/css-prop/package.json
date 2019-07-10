@@ -1,12 +1,12 @@
 {
   "name": "css-prop",
-  "version": "1.0.0-alpha.8",
+  "version": "1.0.0-alpha.9",
   "private": true,
   "license": "MIT",
   "scripts": {
     "start": "servor"
   },
   "dependencies": {
-    "@vanillajs/css-prop": "^1.0.0-alpha.8"
+    "@vanillajs/css-prop": "^1.0.0-alpha.9"
   }
 }

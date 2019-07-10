@@ -1,12 +1,12 @@
 {
   "name": "store-with-superfine",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.9",
   "private": true,
   "license": "MIT",
   "scripts": {
     "start": "servor"
   },
   "dependencies": {
-    "@vanillajs/store": "^1.0.0-alpha.7"
+    "@vanillajs/store": "^1.0.0-alpha.9"
   }
 }
