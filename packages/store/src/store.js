@@ -7,7 +7,21 @@ let _state = {},
 
 const setState = (update, action) => {
   _state = { ..._state, ...update };
-  emitter.emit(EVENT, _state, action);
+  emitter.emit(EVENT, { state: _state, action });
+};
+
+const dispatch = (action, ...payload) => {
+  return event => {
+    if (_actions[action]) {
+      const update = _actions[action]({ state: _state, event, ...payload });
+      if (update) {
+        if (update.then) {
+          return update.then(res => setState(res, action));
+        }
+        return setState(update, action);
+      }
+    }
+  };
 };
 
 const store = {
@@ -20,17 +34,6 @@ const store = {
   },
   get state() {
     return _state;
-  },
-  dispatch(action, ...payload) {
-    if (_actions[action]) {
-      const update = _actions[action](_state, ...payload);
-      if (update) {
-        if (update.then) {
-          return update.then(res => setState(res, action));
-        }
-        return setState(update, action);
-      }
-    }
   },
   use(state, actions) {
     _state = { ..._state, ...state };
