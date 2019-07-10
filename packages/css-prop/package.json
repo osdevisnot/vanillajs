@@ -3,6 +3,7 @@
   "version": "1.0.0-alpha.8",
   "description": "vanillajs css prop",
   "license": "MIT",
+  "private": true,
   "main": "dist/css-prop.js",
   "unpkg": "dist/css-prop.mjs",
   "module": "dist/css-prop.mjs",
