@@ -16,7 +16,9 @@
     "update": "ncu",
     "postupdate": "lerna exec -- ncu"
   },
+  "prettier": "@osdevisnot/prettier",
   "devDependencies": {
+    "@osdevisnot/prettier": "0.2.5",
     "lerna": "^3.15.0"
   }
 }

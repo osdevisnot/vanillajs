@@ -1,7 +1,7 @@
 /**
  * Regex to match the path parameters
  */
-const parametersPattern = /(:[^\/]+)/g;
+const parametersPattern = /(:[^\/]+)/g
 
 /**
  * This helper function identifies if a single route matches the targeted location.
@@ -10,16 +10,16 @@ const parametersPattern = /(:[^\/]+)/g;
  * @param pathname target location to match towards
  */
 function routeMatcher(route, pathname) {
-  const match = new RegExp(route.path.replace(parametersPattern, '([^/]+)') + (route.exact ? '$' : '(/|$)'));
-  const params = (route.path.match(parametersPattern) || []).map(x => x.substring(1));
-  const matches = pathname.match(match);
-  if (!matches) {
-    return false;
-  }
-  return params.reduce((acc, param, idx) => {
-    acc[param] = decodeURIComponent(matches[idx + 1]);
-    return acc;
-  }, {});
+	const match = new RegExp(route.path.replace(parametersPattern, '([^/]+)') + (route.exact ? '$' : '(/|$)'))
+	const params = (route.path.match(parametersPattern) || []).map(x => x.substring(1))
+	const matches = pathname.match(match)
+	if (!matches) {
+		return false
+	}
+	return params.reduce((acc, param, idx) => {
+		acc[param] = decodeURIComponent(matches[idx + 1])
+		return acc
+	}, {})
 }
 
 /**
@@ -27,15 +27,15 @@ function routeMatcher(route, pathname) {
  * @param loc standard location object
  */
 function search(search) {
-  return search
-    .replace(/^\?/, '')
-    .split('&')
-    .filter(param => param.length)
-    .reduce((acc, part) => {
-      const [key, value] = part.split('=');
-      acc[decodeURIComponent(key)] = value ? decodeURIComponent(value) : null;
-      return acc;
-    }, {});
+	return search
+		.replace(/^\?/, '')
+		.split('&')
+		.filter(param => param.length)
+		.reduce((acc, part) => {
+			const [key, value] = part.split('=')
+			acc[decodeURIComponent(key)] = value ? decodeURIComponent(value) : null
+			return acc
+		}, {})
 }
 
 /**
@@ -44,12 +44,12 @@ function search(search) {
  * @param loc Target Location
  */
 function match(routes, loc) {
-  let target = loc.pathname.replace(/[.*]+\/$/, ''),
-    params;
-  const route = routes.find(r => (params = routeMatcher(r, target)));
-  if (!params) params = {};
-  const query = search(loc.search || '');
-  return { route, params, query };
+	let target = loc.pathname.replace(/[.*]+\/$/, ''),
+		params
+	const route = routes.find(r => (params = routeMatcher(r, target)))
+	if (!params) params = {}
+	const query = search(loc.search || '')
+	return { route, params, query }
 }
 
-export { match };
+export { match }
