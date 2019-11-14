@@ -3,20 +3,22 @@
   "version": "1.0.0-alpha.7",
   "description": "A tiny, vanilla JS URL Router",
   "license": "MIT",
-  "main": "dist/router.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/router.cjs.js",
   "unpkg": "dist/router.mjs",
-  "module": "dist/router.mjs",
+  "module": "dist/router.esm.js",
   "source": "src/router.js",
+  "browser": "dist/router.js",
   "scripts": {
-    "build": "microbundle  --name vanillajs.router"
+    "build": "klap build",
+    "watch": "klap watch"
   },
   "devDependencies": {
-    "microbundle": "^0.11.0"
+    "klap": "3.0.1"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "mangle": {
-    "regex": "^_"
   }
 }
