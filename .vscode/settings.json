@@ -1,7 +1,7 @@
 {
-  "files.exclude": {
-    "**/dist/**": false,
-    "**/node_modules/**": true,
-    "**/yarn.lock": true
-  }
+	"files.exclude": {
+		"**/dist/**": true,
+		"**/node_modules/**": true,
+		"**/yarn.lock": true
+	}
 }
