@@ -1,6 +1,6 @@
 # @vanillajs/fetch
 
-A tiny, vanillajs fetch wrapper
+a tiny, vanillajs fetch wrapper.
 
 Fixes below issue with `window.fetch`
 
@@ -15,11 +15,11 @@ npm install @vanillajs/fetch
 ## Usage
 
 ```js
-import fetch from '@vanillajs/fetch';
+import fetch from '@vanillajs/fetch'
 
 fetch('/api/users').then(res => {
-  console.log(`grabbed user ${res.user}`);
-});
+	console.log(`grabbed user ${res.user}`)
+})
 ```
 
 ## Legacy UMD Usage

@@ -1,24 +1,24 @@
 {
-  "name": "@vanillajs/fetch",
-  "version": "1.0.0-alpha.7",
-  "description": "A tiny, vanillajs fetch wrapper",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/fetch.cjs.js",
-  "unpkg": "dist/fetch.mjs",
-  "module": "dist/fetch.esm.js",
-  "source": "src/fetch.js",
-  "browser": "dist/fetch.js",
-  "scripts": {
-    "build": "klap build",
-    "watch": "klap watch"
-  },
-  "devDependencies": {
-    "klap": "3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@vanillajs/fetch",
+	"version": "1.0.0-alpha.7",
+	"description": "a tiny, vanillajs fetch wrapper.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/fetch.cjs.js",
+	"unpkg": "dist/fetch.mjs",
+	"module": "dist/fetch.esm.js",
+	"source": "src/fetch.js",
+	"browser": "dist/fetch.js",
+	"scripts": {
+		"build": "klap build",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
