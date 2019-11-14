@@ -2,6 +2,7 @@
 	"files.exclude": {
 		"**/dist/**": true,
 		"**/node_modules/**": true,
-		"**/yarn.lock": true
+		"**/yarn.lock": true,
+		"**/LICENSE": true
 	}
 }
