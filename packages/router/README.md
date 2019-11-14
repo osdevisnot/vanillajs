@@ -29,8 +29,6 @@ const { router } = window.vanillajs
 
 ## License
 
-## License
-
 **@vanillajs/router** is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 Documentation is licensed under [Creative Common License](http://creativecommons.org/licenses/by/4.0/).
