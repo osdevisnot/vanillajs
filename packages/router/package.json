@@ -1,24 +1,24 @@
 {
-  "name": "@vanillajs/router",
-  "version": "1.0.0-alpha.7",
-  "description": "A tiny, vanilla JS URL Router",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/router.cjs.js",
-  "unpkg": "dist/router.mjs",
-  "module": "dist/router.esm.js",
-  "source": "src/router.js",
-  "browser": "dist/router.js",
-  "scripts": {
-    "build": "klap build",
-    "watch": "klap watch"
-  },
-  "devDependencies": {
-    "klap": "3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@vanillajs/router",
+	"version": "1.0.0-alpha.7",
+	"description": "a tiny, vanilla JS URL Router.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/router.cjs.js",
+	"unpkg": "dist/router.mjs",
+	"module": "dist/router.esm.js",
+	"source": "src/router.js",
+	"browser": "dist/router.js",
+	"scripts": {
+		"build": "klap build",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

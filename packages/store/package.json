@@ -1,27 +1,27 @@
 {
-  "name": "@vanillajs/store",
-  "version": "1.0.0-alpha.9",
-  "description": "A tiny, vanilla JS State Container",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/store.cjs.js",
-  "unpkg": "dist/store.mjs",
-  "module": "dist/store.esm.js",
-  "source": "src/store.js",
-  "browser": "dist/store.js",
-  "scripts": {
-    "build": "klap build",
-    "watch": "klap watch"
-  },
-  "dependencies": {
-    "@vanillajs/emitter": "^1.0.0-alpha.7"
-  },
-  "devDependencies": {
-    "klap": "3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@vanillajs/store",
+	"version": "1.0.0-alpha.9",
+	"description": "a tiny, vanilla JS State Container.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/store.cjs.js",
+	"unpkg": "dist/store.mjs",
+	"module": "dist/store.esm.js",
+	"source": "src/store.js",
+	"browser": "dist/store.js",
+	"scripts": {
+		"build": "klap build",
+		"watch": "klap watch"
+	},
+	"dependencies": {
+		"@vanillajs/emitter": "^1.0.0-alpha.7"
+	},
+	"devDependencies": {
+		"klap": "3.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

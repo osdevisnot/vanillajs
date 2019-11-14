@@ -1,24 +1,24 @@
 {
-  "name": "@vanillajs/object",
-  "version": "1.0.0-alpha.7",
-  "description": "Tiny, vanillajs object utilities",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/object.cjs.js",
-  "unpkg": "dist/object.mjs",
-  "module": "dist/object.esm.js",
-  "source": "src/object.js",
-  "browser": "dist/object.js",
-  "scripts": {
-    "build": "klap build",
-    "watch": "klap watch"
-  },
-  "devDependencies": {
-    "klap": "3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@vanillajs/object",
+	"version": "1.0.0-alpha.7",
+	"description": "tiny, vanillajs object utilities.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/object.cjs.js",
+	"unpkg": "dist/object.mjs",
+	"module": "dist/object.esm.js",
+	"source": "src/object.js",
+	"browser": "dist/object.js",
+	"scripts": {
+		"build": "klap build",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

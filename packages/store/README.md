@@ -1,40 +1,38 @@
 # @vanillajs/store
 
-> A tiny, vanilla JS State Container
+a tiny, vanilla JS State Container.
 
 [![The GZIP size of @vanillajs/store](http://img.badgesize.io/https://unpkg.com/@vanillajs/store?compression=gzip&label=GZIP%20Size)](https://unpkg.com/@vanillajs/store)
 [![The Brotli size of @vanillajs/store](http://img.badgesize.io/https://unpkg.com/@vanillajs/store?compression=brotli&label=Brotli%20Size)](https://unpkg.com/@vanillajs/store)
 
 ## Installation
 
-Grab a copy from UNPKG CDN:
-
-```html
-<script src="https://unpkg.com/@vanillajs/store">
-```
-
-or Install it from NPM:
-
 ```bash
 npm install @vanillajs/store
 ```
 
-Then with a module bundler like [parcel](https://parceljs.org/) or [rollup](https://rollupjs.org/guide/en), use as you would anything else:
-
-```js
-import { store } from '@vanillajs/store';
-```
-
 ## Usage
 
-See [online demos](https://codesandbox.io/dashboard/sandboxes/@vanilla/store)
+```js
+import { store } from '@vanillajs/store'
+```
 
-Use with Vanilla JS | See [codesandbox](https://codesandbox.io/s/zly4z2pq24)
+## Use from unpkg
 
-Use with React | See [codesandbox](https://codesandbox.io/s/zr3y4o45vl)
+```html
+<script src="//unpkg.com/@vanillajs/store"></script>
+```
 
-Use with lit-html | See [codesandbox](https://codesandbox.io/s/ppyw7kj7rj)
+```js
+const { store } = window.vanillajs
+```
 
 ## License
 
-[MIT License](https://oss.ninja/mit/osdevisnot) @ [osdevisnot](https://github.com/osdevisnot)
+## License
+
+**@vanillajs/store** is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+Documentation is licensed under [Creative Common License](http://creativecommons.org/licenses/by/4.0/).
+
+Created with ♥ by [@osdevisnot](https://github.com/osdevisnot) and [all contributors](https://github.com/osdevisnot/vanillajs/graphs/contributors).

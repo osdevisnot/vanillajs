@@ -1,24 +1,24 @@
 {
-  "name": "@vanillajs/emitter",
-  "version": "1.0.0-alpha.7",
-  "description": "A tiny, vanillajs event emitter",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/emitter.cjs.js",
-  "unpkg": "dist/emitter.esm.js",
-  "module": "dist/emitter.esm.js",
-  "source": "src/emitter.js",
-  "browser": "dist/emitter.js",
-  "scripts": {
-    "build": "klap build",
-    "watch": "klap watch"
-  },
-  "devDependencies": {
-    "klap": "3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@vanillajs/emitter",
+	"version": "1.0.0-alpha.7",
+	"description": "a tiny, vanillajs event emitter.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/emitter.cjs.js",
+	"unpkg": "dist/emitter.esm.js",
+	"module": "dist/emitter.esm.js",
+	"source": "src/emitter.js",
+	"browser": "dist/emitter.js",
+	"scripts": {
+		"build": "klap build",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

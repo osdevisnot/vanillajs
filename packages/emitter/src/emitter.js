@@ -13,4 +13,4 @@ const emitter = {
 	},
 }
 
-export default emitter
+export { emitter }
