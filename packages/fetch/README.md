@@ -37,4 +37,10 @@ fetch('/api/users').then(res => {
 ...
 ```
 
-[MIT License](https://oss.ninja/mit/osdevisnot) @ [osdevisnot](https://github.com/osdevisnot)
+## License
+
+**@vanillajs/fetch** is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+Documentation is licensed under [Creative Common License](http://creativecommons.org/licenses/by/4.0/).
+
+Created with ♥ by [@osdevisnot](https://github.com/osdevisnot) and [all contributors](https://github.com/osdevisnot/vanillajs/graphs/contributors).
