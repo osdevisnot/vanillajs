@@ -1,35 +1,32 @@
-import emitter from '@vanillajs/emitter'
-
-const EVENT = '@_@'
-
 let _state = {},
-	_actions = {}
+	_actions = {},
+	_events = []
 
-const setState = (update, action) => {
-	_state = { ..._state, ...update }
-	emitter.emit(EVENT, { state: _state, action })
+let update = (action, state) => {
+	_state = { ..._state, ...state }
+	_events.map(handler => handler(_state, action))
 }
 
-const dispatch = (action, ...payload) => {
+let dispatch = (action, ...payload) => {
 	return event => {
 		if (_actions[action]) {
-			const update = _actions[action]({ state: _state, event, ...payload })
+			let update = _actions[action](event, _state, ...payload)
 			if (update) {
 				if (update.then) {
-					return update.then(res => setState(res, action))
+					return update.then(res => update(res, action))
 				}
-				return setState(update, action)
+				return update(update, action)
 			}
 		}
 	}
 }
 
-const store = {
+let store = {
 	off(handler) {
-		emitter.off(EVENT, handler)
+		_events.splice(_events.indexOf(handler) >>> 0, 1)
 	},
 	on(handler) {
-		emitter.on(EVENT, handler)
+		_events.push(handler)
 		return store.off.bind(store, handler)
 	},
 	get state() {
@@ -41,4 +38,4 @@ const store = {
 	},
 }
 
-export default store
+export { update, store, dispatch }

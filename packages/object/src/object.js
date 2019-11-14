@@ -1,11 +1,11 @@
-const get = (obj, keys, defalt) => {
+let get = (obj, keys, defalt) => {
 	keys.split && (keys = keys.split('.'))
 	let p = 0
 	while (obj && p < keys.length) obj = obj[keys[p++]]
 	return obj === undefined || p < keys.length ? defalt : obj
 }
 
-const set = (obj, keys, val) => {
+let set = (obj, keys, val) => {
 	keys.split && (keys = keys.split('.'))
 	var i = 0,
 		l = keys.length,

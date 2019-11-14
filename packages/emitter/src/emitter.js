@@ -1,6 +1,6 @@
-const _events = {}
+let _events = {}
 
-const emitter = {
+let emitter = {
 	off(event, handler) {
 		_events[event] && _events[event].splice(_events[event].indexOf(handler) >>> 0, 1)
 	},
