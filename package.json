@@ -7,7 +7,10 @@
 	"author": "osdevisnot <osdevisnot@gmail.com>",
 	"scripts": {
 		"boot": "lerna bootstrap",
-		"postboot": "lerna run build",
+		"postboot": "yarn build",
+		"build": "lerna run build",
+		"coverage": "tslib coverage",
+		"coveralls": "tslib coveralls",
 		"prepub": "yarn run setup",
 		"pub": "lerna publish",
 		"presetup": "git clean -fdX",
@@ -15,12 +18,15 @@
 		"postsetup": "yarn run boot",
 		"sort": "sort-package-json",
 		"postsort": "lerna exec -- sort-package-json",
+		"test": "tslib test",
 		"update": "ncu -u",
 		"postupdate": "lerna exec -- ncu -u"
 	},
 	"prettier": "@osdevisnot/prettier",
 	"devDependencies": {
 		"@osdevisnot/prettier": "0.2.5",
-		"lerna": "3.18.4"
+		"@types/jest": "24.0.23",
+		"lerna": "3.18.4",
+		"tslib-cli": "6.0.1"
 	}
 }
