@@ -1,4 +1,4 @@
-let hash = input => {
+let hash = (input: string): string => {
 	let val = 5381
 	let i = input.length
 

@@ -9,10 +9,12 @@
 	"main": "dist/router.cjs.js",
 	"unpkg": "dist/router.mjs",
 	"module": "dist/router.esm.js",
-	"source": "src/router.js",
+	"source": "src/router.ts",
 	"browser": "dist/router.js",
+	"types": "dist/router.d.ts",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"start": "klap start",
 		"watch": "klap watch"
 	},

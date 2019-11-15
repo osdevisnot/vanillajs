@@ -9,10 +9,12 @@
 	"main": "dist/hash.cjs.js",
 	"unpkg": "dist/hash.mjs",
 	"module": "dist/hash.esm.js",
-	"source": "src/hash.js",
+	"source": "src/hash.ts",
 	"browser": "dist/hash.js",
+	"types": "dist/hash.d.ts",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"watch": "klap watch"
 	},
 	"devDependencies": {

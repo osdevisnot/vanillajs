@@ -9,10 +9,11 @@
 	"main": "dist/object.cjs.js",
 	"unpkg": "dist/object.mjs",
 	"module": "dist/object.esm.js",
-	"source": "src/object.js",
+	"source": "src/object.ts",
 	"browser": "dist/object.js",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"start": "klap start",
 		"watch": "klap watch"
 	},

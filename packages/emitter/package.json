@@ -9,10 +9,12 @@
 	"main": "dist/emitter.cjs.js",
 	"unpkg": "dist/emitter.esm.js",
 	"module": "dist/emitter.esm.js",
-	"source": "src/emitter.js",
+	"source": "src/emitter.ts",
+	"types": "dist/emitter.d.ts",
 	"browser": "dist/emitter.js",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"start": "klap start",
 		"watch": "klap watch"
 	},

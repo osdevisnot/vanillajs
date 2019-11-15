@@ -9,10 +9,11 @@
 	"main": "dist/store.cjs.js",
 	"unpkg": "dist/store.mjs",
 	"module": "dist/store.esm.js",
-	"source": "src/store.js",
+	"source": "src/store.ts",
 	"browser": "dist/store.js",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"start": "klap start",
 		"watch": "klap watch"
 	},

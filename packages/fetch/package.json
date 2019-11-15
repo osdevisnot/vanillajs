@@ -9,10 +9,12 @@
 	"main": "dist/fetch.cjs.js",
 	"unpkg": "dist/fetch.mjs",
 	"module": "dist/fetch.esm.js",
-	"source": "src/fetch.js",
+	"source": "src/fetch.ts",
+	"types": "dist/fetch.d.ts",
 	"browser": "dist/fetch.js",
 	"scripts": {
 		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
 		"watch": "klap watch"
 	},
 	"devDependencies": {
