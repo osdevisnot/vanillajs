@@ -1,8 +1,8 @@
 {
 	"name": "@vanillajs/vanillajs",
 	"version": "0.0.0",
-	"description": "high quality, evergreen vanilla javascript utilities",
 	"private": true,
+	"description": "high quality, evergreen vanilla javascript utilities",
 	"license": "MIT",
 	"author": "osdevisnot <osdevisnot@gmail.com>",
 	"scripts": {
@@ -13,13 +13,14 @@
 		"presetup": "git clean -fdX",
 		"setup": "yarn",
 		"postsetup": "yarn run boot",
-		"sort": "lerna exec -- sort-package-json",
-		"update": "ncu",
-		"postupdate": "lerna exec -- ncu"
+		"sort": "sort-package-json",
+		"postsort": "lerna exec -- sort-package-json",
+		"update": "ncu -u",
+		"postupdate": "lerna exec -- ncu -u"
 	},
 	"prettier": "@osdevisnot/prettier",
 	"devDependencies": {
 		"@osdevisnot/prettier": "0.2.5",
-		"lerna": "^3.15.0"
+		"lerna": "3.18.4"
 	}
 }
