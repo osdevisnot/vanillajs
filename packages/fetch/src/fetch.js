@@ -10,4 +10,4 @@ let checkStatus = response => {
 
 let fetch = (url, options) => window.fetch(url, options).then(checkStatus)
 
-export default fetch
+export { fetch }

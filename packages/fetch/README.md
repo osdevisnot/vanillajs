@@ -15,10 +15,10 @@ npm install @vanillajs/fetch
 ## Usage
 
 ```js
-import fetch from '@vanillajs/fetch'
+import { fetch } from '@vanillajs/fetch'
 
 fetch('/api/users').then(res => {
-	console.log(`grabbed user ${res.user}`)
+	console.log(`user details: ${res.user}`)
 })
 ```
 
@@ -32,7 +32,7 @@ fetch('/api/users').then(res => {
 const { fetch } = window.vanillajs;
 
 fetch('/api/users').then(res => {
-  console.log(`grabbed user ${res.user}`);
+  console.log(`user details: ${res.user}`);
 });
 ...
 ```

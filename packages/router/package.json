@@ -13,7 +13,8 @@
 	"browser": "dist/router.js",
 	"scripts": {
 		"build": "klap build",
-		"watch": "klap watch"
+		"watch": "klap watch",
+		"start": "klap start"
 	},
 	"devDependencies": {
 		"klap": "3.0.1"

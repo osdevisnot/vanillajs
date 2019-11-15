@@ -16,8 +16,13 @@ npm install @vanillajs/object
 ```js
 import { get, set } from '@vanillajs/object'
 
-get(response, 'data.a.b.c', 0)
-set(request, 'a.b.c', 20)
+const response = {}
+
+set(response, 'data.a.b.c', 0) // creates the path in response and assign 0 to leaf
+const d = get(response, 'data.a.d') // get d from deep object without erroring out.
+
+console.log(response)
+console.log(d) // undefined sice data.a.d is not defined
 ```
 
 ## Use from unpkg
@@ -28,9 +33,6 @@ set(request, 'a.b.c', 20)
 
 ```js
 const { get, set } = window.vanillajs;
-
-get(response, 'data.a.b.c', 0);
-set(request, 'a.b.c', 20);
 ...
 ```
 
