@@ -1120,10 +1120,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@osdevisnot/prettier@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@osdevisnot/prettier/-/prettier-0.2.5.tgz#84686d61afd4c8f4c9c5652e43994f232f290ecd"
-  integrity sha512-MkMM8GCa/ROLJyE8/3XBFCBctVYWhmNtuE5GhdgWlIwN3ywEDn1OVbclYBDH6d7AvD8WvI6G/tk5XoW6s9UZDQ==
+"@osdevisnot/prettier@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@osdevisnot/prettier/-/prettier-2.1.0.tgz#0df47a4d2441e3c98c0680dafda8ba1f75cb4dab"
+  integrity sha512-qJFJDtoaFADasxIybK+7X1z5hEgoQoQI4TQDnqj7DDnbistTbQqxgbw4Nb6shEdTzjIlxMQq9opJ4yKLL4in9g==
   dependencies:
     prettier "*"
 
