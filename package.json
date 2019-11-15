@@ -1,7 +1,7 @@
 {
 	"name": "@vanillajs/vanillajs",
 	"version": "0.0.0",
-	"description": "evergreen vanillajs utilities",
+	"description": "high quality, evergreen vanilla javascript utilities",
 	"private": true,
 	"license": "MIT",
 	"author": "osdevisnot <osdevisnot@gmail.com>",

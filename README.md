@@ -1,6 +1,6 @@
 # vanillajs
 
-evergreen vanillajs utilities
+high quality, evergreen vanilla javascript utilities
 
 ## packages overview
 
