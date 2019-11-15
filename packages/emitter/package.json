@@ -10,8 +10,8 @@
 	"unpkg": "dist/emitter.esm.js",
 	"module": "dist/emitter.esm.js",
 	"source": "src/emitter.ts",
-	"types": "dist/emitter.d.ts",
 	"browser": "dist/emitter.js",
+	"types": "dist/emitter.d.ts",
 	"scripts": {
 		"build": "klap build",
 		"postbuild": "tsc --emitDeclarationOnly",

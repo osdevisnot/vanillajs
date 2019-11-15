@@ -10,8 +10,8 @@
 	"unpkg": "dist/fetch.mjs",
 	"module": "dist/fetch.esm.js",
 	"source": "src/fetch.ts",
-	"types": "dist/fetch.d.ts",
 	"browser": "dist/fetch.js",
+	"types": "dist/fetch.d.ts",
 	"scripts": {
 		"build": "klap build",
 		"postbuild": "tsc --emitDeclarationOnly",
