@@ -13,7 +13,8 @@
 	"browser": "dist/store.js",
 	"scripts": {
 		"build": "klap build",
-		"watch": "klap watch"
+		"watch": "klap watch",
+		"start": "klap start"
 	},
 	"dependencies": {
 		"@vanillajs/emitter": "^1.0.0-alpha.7"
