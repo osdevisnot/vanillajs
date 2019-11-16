@@ -4,5 +4,6 @@
 		"**/node_modules/**": true,
 		"**/yarn.lock": true,
 		"**/LICENSE": true
-	}
+	},
+	"editor.formatOnSave": true
 }

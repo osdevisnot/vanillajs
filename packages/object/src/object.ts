@@ -1,4 +1,4 @@
-let get = (obj: { [x: string]: any }, keys: string | string[], defalt: unknown): unknown => {
+let get = (obj: { [x: string]: any }, keys: string | string[], defalt?: unknown): unknown => {
 	;(keys as string).split && (keys = (keys as string).split('.'))
 	let p = 0
 	while (obj && p < keys.length) obj = obj[keys[p++]]
