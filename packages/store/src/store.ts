@@ -14,7 +14,7 @@ let update = (action: string, state: State) => {
 }
 
 let dispatch = (action: string, ...payload: any[]) => {
-	return (event: any) => {
+	return (event?: any) => {
 		if (_actions[action]) {
 			let result = _actions[action](event, _state, ...payload)
 			if (result) {
