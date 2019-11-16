@@ -1,22 +1,26 @@
 {
-  "name": "@vanillajs/object",
-  "version": "1.0.0-alpha.7",
-  "description": "Tiny, vanillajs object utilities",
-  "license": "MIT",
-  "main": "dist/object.js",
-  "unpkg": "dist/object.mjs",
-  "module": "dist/object.mjs",
-  "source": "src/object.js",
-  "scripts": {
-    "build": "microbundle  --name vanillajs.object"
-  },
-  "devDependencies": {
-    "microbundle": "^0.11.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "mangle": {
-    "regex": "^_"
-  }
+	"name": "@vanillajs/object",
+	"version": "1.0.0-alpha.7",
+	"description": "tiny, vanillajs object utilities.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/object.cjs.js",
+	"unpkg": "dist/object.mjs",
+	"module": "dist/object.esm.js",
+	"source": "src/object.ts",
+	"browser": "dist/object.js",
+	"scripts": {
+		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
+		"start": "klap start",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.1.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

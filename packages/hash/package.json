@@ -1,22 +1,26 @@
 {
-  "name": "@vanillajs/hash",
-  "version": "1.0.0-alpha.8",
-  "description": "vanillajs string hash",
-  "license": "MIT",
-  "main": "dist/hash.js",
-  "unpkg": "dist/hash.mjs",
-  "module": "dist/hash.mjs",
-  "source": "src/hash.js",
-  "scripts": {
-    "build": "microbundle  --name vanillajs.hash"
-  },
-  "devDependencies": {
-    "microbundle": "^0.11.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "mangle": {
-    "regex": "^_"
-  }
+	"name": "@vanillajs/hash",
+	"version": "1.0.0-alpha.8",
+	"description": "a tiny, vanillajs string hash.",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"main": "dist/hash.cjs.js",
+	"unpkg": "dist/hash.mjs",
+	"module": "dist/hash.esm.js",
+	"source": "src/hash.ts",
+	"browser": "dist/hash.js",
+	"types": "dist/hash.d.ts",
+	"scripts": {
+		"build": "klap build",
+		"postbuild": "tsc --emitDeclarationOnly",
+		"watch": "klap watch"
+	},
+	"devDependencies": {
+		"klap": "3.1.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

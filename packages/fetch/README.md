@@ -1,6 +1,6 @@
 # @vanillajs/fetch
 
-A tiny, vanillajs fetch wrapper
+a tiny, vanillajs fetch wrapper.
 
 Fixes below issue with `window.fetch`
 
@@ -15,11 +15,11 @@ npm install @vanillajs/fetch
 ## Usage
 
 ```js
-import fetch from '@vanillajs/fetch';
+import { fetch } from '@vanillajs/fetch'
 
 fetch('/api/users').then(res => {
-  console.log(`grabbed user ${res.user}`);
-});
+	console.log(`user details: ${res.user}`)
+})
 ```
 
 ## Legacy UMD Usage
@@ -32,9 +32,15 @@ fetch('/api/users').then(res => {
 const { fetch } = window.vanillajs;
 
 fetch('/api/users').then(res => {
-  console.log(`grabbed user ${res.user}`);
+  console.log(`user details: ${res.user}`);
 });
 ...
 ```
 
-[MIT License](https://oss.ninja/mit/osdevisnot) @ [osdevisnot](https://github.com/osdevisnot)
+## License
+
+**@vanillajs/fetch** is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+Documentation is licensed under [Creative Common License](http://creativecommons.org/licenses/by/4.0/).
+
+Created with ♥ by [@osdevisnot](https://github.com/osdevisnot) and [all contributors](https://github.com/osdevisnot/vanillajs/graphs/contributors).

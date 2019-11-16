@@ -1,22 +1,32 @@
 {
-  "name": "@vanillajs/vanillajs",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "author": "osdevisnot <osdevisnot@gmail.com>",
-  "scripts": {
-    "boot": "lerna bootstrap",
-    "postboot": "lerna run build",
-    "prepub": "yarn run setup",
-    "pub": "lerna publish",
-    "presetup": "git clean -fdX",
-    "setup": "yarn",
-    "postsetup": "yarn run boot",
-    "sort": "lerna exec -- sort-package-json",
-    "update": "ncu",
-    "postupdate": "lerna exec -- ncu"
-  },
-  "devDependencies": {
-    "lerna": "^3.15.0"
-  }
+	"name": "@vanillajs/vanillajs",
+	"version": "0.0.0",
+	"private": true,
+	"description": "high quality, evergreen vanilla javascript utilities",
+	"license": "MIT",
+	"author": "osdevisnot <osdevisnot@gmail.com>",
+	"scripts": {
+		"boot": "lerna bootstrap",
+		"postboot": "yarn build",
+		"build": "lerna run build",
+		"coverage": "tslib coverage",
+		"coveralls": "tslib coveralls",
+		"prepub": "yarn run setup",
+		"pub": "lerna publish",
+		"presetup": "git clean -fdX",
+		"setup": "yarn",
+		"postsetup": "yarn run boot",
+		"sort": "sort-package-json",
+		"postsort": "lerna exec -- sort-package-json",
+		"test": "tslib test",
+		"update": "ncu -u",
+		"postupdate": "lerna exec -- ncu -u"
+	},
+	"prettier": "@osdevisnot/prettier",
+	"devDependencies": {
+		"@osdevisnot/prettier": "2.1.0",
+		"@types/jest": "24.0.23",
+		"lerna": "3.18.4",
+		"tslib-cli": "6.0.1"
+	}
 }
