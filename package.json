@@ -2,7 +2,7 @@
 	"name": "@vanillajs/vanillajs",
 	"version": "0.0.0",
 	"private": true,
-	"description": "high quality, evergreen vanilla javascript utilities",
+	"description": "high quality, evergreen vanilla javascript utilities.",
 	"license": "MIT",
 	"author": "osdevisnot <osdevisnot@gmail.com>",
 	"scripts": {
